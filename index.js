@@ -19,7 +19,7 @@ app.use(cors({
 // Use JSON parsing middleware
 
 
-const uri ='mongodb://vishalsmurali:vishal123@ac-zjd5rri-shard-00-00.wj6gy9a.mongodb.net:27017,ac-zjd5rri-shard-00-01.wj6gy9a.mongodb.net:27017,ac-zjd5rri-shard-00-02.wj6gy9a.mongodb.net:27017/?ssl=true&replicaSet=atlas-kny4ov-shard-0&authSource=admin&retryWrites=true&w=majority';
+const uri =process.env.MONGODB_URI;
 
 // Connect to MongoDB Atlas
 mongoose.connect(uri, {
