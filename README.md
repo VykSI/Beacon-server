@@ -69,3 +69,5 @@ Event Routes
 ```
 node index.js
 ```
+## NOTE:
+Change cors accordingly.
